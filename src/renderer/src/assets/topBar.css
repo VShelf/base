@@ -1,0 +1,113 @@
+.titlebar {
+  height: 40px;
+  /* background: black; */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-app-region: drag;
+  padding: 0 10px;
+}
+
+.titlebar-bg {
+  /* background: linear-gradient(to bottom, #191924, #121214); */
+  background-color: #121212;
+  background: #121212;
+  border-bottom: 1px solid #222;
+}
+
+.titlebar-bg_1 {
+  background: #470042;
+  border-bottom: 1px solid #320047;
+}
+
+.title {
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.titlebar .window-controls {
+  display: flex;
+  gap: 10px;
+  -webkit-app-region: no-drag;
+  /* botões não arrastam */
+}
+
+#close {
+  background-color: #fa615e;
+  border-radius: 100%;
+}
+
+#minimize {
+  background-color: #f7be42;
+  border-radius: 100%;
+}
+
+#maximize {
+  background-color: #32c746;
+  border-radius: 100%;
+}
+
+.titlebar button {
+  background: transparent;
+  border: none;
+  color: white;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  /* transition: all 0.2s ease-in-out; */
+}
+
+.titlebar button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.titlebar button:hover {
+  outline: none;
+  box-shadow: 0 0 0 2px #4a4a4a;
+}
+
+.side-buttons {
+  display: flex;
+  gap: 10px;
+  -webkit-app-region: no-drag;
+  /* botões não arrastam */
+}
+
+.side-buttons span {
+  /* background: transparent; */
+  /* border: 1px solid black; */
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  /* transition: all 0.2s ease-in-out; */
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-buttons span:hover {
+  /* background: rgba(255, 255, 255, 0.1); */
+  /* border: 1px solid white; */
+  /* background: white; */
+  outline: none;
+  box-shadow: 0 0 0 2px #4a4a4a;
+}
+
+.side-button_config {
+  background-color: #5e9cfa;
+}
+
+.side-button_home {
+  background-color: #ac5efa;
+}
+
+.side-button_console {
+  background-color: #9cfa5e;
+}
